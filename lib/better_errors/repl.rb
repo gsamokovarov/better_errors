@@ -2,6 +2,8 @@ module BetterErrors
   # @private
   module REPL
     PROVIDERS = [
+        { impl:   "better_errors/repl/irb",
+          const:  :IRB },
         { impl:   "better_errors/repl/basic",
           const:  :Basic },
       ]
